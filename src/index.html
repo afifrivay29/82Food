@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SwiperJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="px-6 py-4 bg-stone-700">
+    <div class="flex justify-between">
+      <h1 class="text-white text-2xl">82<span class="font-bold">Food</span></h1>
+      <nav class="text-white space-x-4 text-lg">
+        <a href="#">About Us</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero section 1 -->
+    <section>
+      <div id="image-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden md:h-[36rem]">
+          <!-- Slide 1 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="/src/component/image/slider-4.jpeg" class="block w-full h-full object-cover" alt="Slide 1">
+          </div>
+          <!-- Slide 2 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="/src/component/image/slider-1.jpg" class="block w-full h-full object-cover" alt="Slide 2">
+          </div>
+          <!-- Slide 3 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="/src/component/image/slider-3.jpeg" class="block w-full h-full object-cover" alt="Slide 3">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+  <!-- Hero section 2 -->
+  <section class="py-16 px-6 text-center bg-gray-100">
+    <h1 class="text-4xl font-bold text-center text-gray-900 md:text-5xl">Rasakan Lezatnya Setiap Gigitan</h1>
+    <p class="mt-4 text-lg text-center text-gray-600 md:text-xl max-w-2xl mx-auto">
+      Nikmati sajian istimewa dari bahan-bahan segar yang dipadukan dengan cita rasa autentik — dibuat dengan cinta untuk memanjakan lidah Anda di setiap suapan.
+    </p>
+  </section>
+  <!-- Keunggulan section 3 -->
+    <section class="py-2 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-2">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Produk Unggulan</h2>
+
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <!-- Card Produk 1 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-4">
+              <img class="rounded-lg mx-auto mb-4" src="/src/component/image/unggulan-1.jpg" alt="product slide image 1" />
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Seafood Tom Yum Fried Rice</h5>
+              <p class="text-gray-300 text-sm mb-2">Deskripsi: Nasi goreng khas Thailand dengan bumbu tom yum, dipadukan seafood segar.</p>
+              <p class="text-gray-500 text-sm font-thin mb-2">Bahan: Nasi putih, Udang dan cumi, Pasta tom yum, Bawang putih & daun jeruk, Cabai rawit, Telur</p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp. 30.000</span>
+                <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <!-- Card Produk 2 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-4">
+              <img class="rounded-lg mx-auto mb-4" src="/src/component/image/unggulan-4.jpg" alt="product slide image 2" />
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Beef Blackpepper Noodle</h5>
+              <p class="text-gray-300 text-sm mb-2">Deskripsi: Mi goreng dengan potongan daging sapi empuk dan saus lada hitam gurih pedas.</p>
+              <p class="text-gray-500 text-sm font-thin mb-2">Bahan: mie pipih, Daging sapi iris tipis (sukiyaki), Bawang bombay, Saus lada hitam, Kecap manis & kecap asin</p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp. 28.000</span>
+                <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <!-- Card Produk 3 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-4">
+              <img class="rounded-lg mx-auto mb-4" src="/src/component/image/unggulan-3.jpg" alt="product slide image 3" />
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Spicy Garlic Chicken Rice</h5>
+              <p class="text-gray-300 text-sm mb-2">Deskripsi: Nasi hangat dengan ayam goreng tepung renyah, disiram saus bawang putih pedas khas Asia.</p>
+              <p class="text-gray-500 text-sm font-thin mb-2">Bahan: Nasi putih, Dada ayam fillet, Tepung bumbu serbaguna, Bawang putih cincang, Cabai merah, Kecap asin & saus tiram</p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp. 25.000</span>
+                <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <!-- Card Produk 4 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-4">
+              <img class="rounded-lg mx-auto mb-4" src="/src/component/image/unggulan-2.jpg" alt="product slide image 4" />
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Korean Bulgogi Noodle Bowl</h5>
+              <p class="text-gray-300 text-sm mb-2">Deskripsi: Mi dengan topping daging sapi bulgogi manis gurih dan taburan wijen serta daun bawang.</p>
+              <p class="text-gray-500 text-sm font-thin mb-2">Bahan: Mi ramen atau mi lurus, Daging sapi iris tipis, Saus bulgogi, Wijen sangrai, Daun bawang iris</p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp. 32.000</span>
+                <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="swiper-button-next text-white inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50"></div>
+        <div class="swiper-button-prev text-white inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50"></div>
+
+      </div>
+    </div>
+  </section>
+  <!-- CTA & Footer -->
+  <section></section>
+  <!-- flowbite js -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
+</body>
+</html>
